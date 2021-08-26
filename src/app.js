@@ -12,7 +12,7 @@ const {renderError} = require("./helpers/error-handler.helper");
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 console.log('static path: ', path.join(__dirname, 'public'));
-// view engine setup code
+// view engine setup code changes
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs({
